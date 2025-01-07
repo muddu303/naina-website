@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Will You Go Out With Me?</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="message-box">
+            <h1 id="greeting">Hello Naina!</h1>
+            <p id="question">I have something to ask...</p>
+            <div id="animation-container">
+                <button id="askButton">Click to Know!</button>
+            </div>
+            <div id="answer" class="hidden">
+                <h2 id="question-asked">Naina, will you go out with me?</h2>
+                <button id="yesButton" onclick="showResponse(true)">Yes</button>
+                <button id="noButton" onclick="showResponse(false)">No</button>
+            </div>
+            <div id="response" class="hidden">
+                <p id="responseText"></p>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
